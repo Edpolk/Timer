@@ -11,7 +11,7 @@ TimerClass timer(nrf_timer_num, cc_channel_num);
 
 void setup() {
     Serial.setPins(0, 27);
-    Serial.begin(230400);
+    Serial.begin(115200);  //230400
     Serial.println("Starting...");
 
     pinMode(OUT_PIN, OUTPUT);
@@ -35,4 +35,3 @@ void loop() {
     __WFE(); // More info about this sequence:
 // devzone.nordicsemi.com/f/nordic-q-a/490/how-do-you-put-the-nrf51822-chip-to-sleep/2571
 }
-
